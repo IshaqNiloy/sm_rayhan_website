@@ -1,0 +1,175 @@
+nav {
+    margin-top: 15px;
+}
+
+.navbar-brand {
+    font-weight: 650;
+    font-family: 'Montserrat';
+    color: #000;
+}
+.navbar-brand:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-nav {
+   padding-right: 70px; 
+}
+
+#active {
+    color: #926402 !important;
+}
+
+.container {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.container-loaded {
+    opacity: 1;
+}
+
+h1 {
+    font-size: 45px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    font-weight: bold;
+}
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 37px;
+    }
+}
+
+h3 {
+    font-weight: 700;
+}
+
+@media (max-width: 575px) {
+    .col-sm-4 h3 {
+        font-size: 22px;
+        padding: 0px 0px 35px 0px;
+        margin: 0px;
+    }
+}
+
+h4 {
+    font-weight: 700;
+}
+
+.header {
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Montserrat';;
+    line-height: 1.8em;
+    margin-bottom: 50px;
+}
+
+#right-align-text {
+    text-align: right;
+}
+
+#right-align-text p {
+    font-size: 16px;
+} 
+
+@media (max-width: 575px) {
+   #right-align-text p {
+        margin-bottom: 0px;
+        text-align: left;
+    }    
+}
+
+.work-experience-section, .education-section,
+.volunteering-section, .skills-and-expertise-section {
+    border-bottom: 1px solid #e2e2e2;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+@media (max-width: 575px) {
+    .work-experience-section, .education-section,
+    .volunteering-section, .skills-and-expertise-section {
+        border-bottom: 1px solid #e2e2e2;
+        padding: 35px 5px 35px 5px;
+    }
+}
+
+.skills-and-expertise-section p {
+    margin-bottom: 15px;
+}
+
+.circle {
+    font-size: 12px;
+}
+
+.footer {
+    border-top: 1px solid #e2e2e2;
+    padding: 50px 5px 0px 5px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 575px) {
+    .footer {
+        padding: 35px 5px 0px 5px;
+        margin-bottom: 35px;
+    }
+}
+
+.footer .col-sm-4 {
+    margin-bottom: 25px;
+}
+
+.footer .row p {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+    .footer .row .col-sm-4 {
+        max-width: 25%;
+    }
+}
+
+.footer .row span {
+    font-size: 16px;
+}
+
+.footer-social-icons a {
+    font-size: 13px;
+    color: #000;
+}
+
+.footer-social-icons a:nth-child(2) {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

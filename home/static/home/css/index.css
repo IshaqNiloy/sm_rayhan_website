@@ -1,5 +1,17 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
 nav {
     margin-top: 15px;
+}
+
+.rounded-circle {
+    width: 50px;
+    border: 3px solid #000;
+    filter: grayscale(100%);
+    overflow: hidden;
 }
 
 .navbar-brand {
@@ -7,13 +19,14 @@ nav {
     font-family: 'Montserrat';
     color: #000;
 }
+
 .navbar-brand:hover {
     text-decoration: none;
     color: #000;
 }
 
 .navbar-nav {
-   padding-right: 70px; 
+   padding-right: 70px;
 }
 
 @media (max-width: 768px) {
@@ -29,12 +42,23 @@ nav {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     transition: all 1s ease-in-out;
 }
 
 .container-loaded {
     opacity: 1;
+}
+
+h1 {
+    font-size: 100px;
+}
+h4 {
+    font-size: 22px;
 }
 
 @media (max-width: 768px) {
@@ -46,13 +70,16 @@ nav {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     h1 {
-        font-size: 100px;
+        font-size: 85px;
     }
     h4 {
-        font-size: 22px;
+        font-size: 20px;
     }
+}
+
+@media (min-width: 1024px) {
 }
 
 h4 {
@@ -61,14 +88,9 @@ h4 {
 
 #main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (min-width: 575px) {
-    #main {
-        height: 100vh;
-    }
+        justify-content: center;
+        align-items: center;
+    padding-bottom: 50px;
 }
 
 @media (max-width: 575px) {
@@ -175,10 +197,21 @@ p {
 }
 
 .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    max-width: 1200px;
+    bottom: 0;
     border-top: 1px solid #e2e2e2;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     padding-top: 50px;
+}
+
+@media (min-width: 1441px) and (max-width: 2559px){
+    .footer {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 .footer .row p {

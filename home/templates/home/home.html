@@ -24,7 +24,7 @@
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-expand-md" style="z-index: 3000;">
-            <a class="navbar-brand" href="index.html">S M Rayhan</a>
+            <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'home/images/smrayhan_circle.png' %}" class="img-fluid rounded-circle" alt="brand image"></a>
             <button class="navbar-toggler" style="border: 1px solid #000000;" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#000000; font-size:28px;"></i></span>
             </button>
@@ -49,7 +49,7 @@
                     <img src={% static "home/images/smrayhan_circle.png" %} id="hero-img">
                 </div>
                 <div class="col-sm-6"  style="order: 1">
-                    <h1>Hello</h1>
+                    <h1>S M Rayhan</h1>
                     <h4>A Bit About Me</h4>
                     <p>Have more than +17 years of experience in Telecom, MFS & Fintech industries in Bangladesh including +5 years of experience in running group of businesses & successfully ensuring returns for investors (Alhamdulillah).<br>
                     <span class="know-more-option" onClick="showMore()">Know More</span>

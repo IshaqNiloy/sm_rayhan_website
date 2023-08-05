@@ -2,9 +2,16 @@ nav {
     margin-top: 15px;
 }
 
+.rounded-circle {
+    width: 50px;
+    border: 3px solid #000;
+    filter: grayscale(100%);
+    overflow: hidden;
+}
+
 .navbar-brand {
     font-weight: 650;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     color: #000;
 }
 .navbar-brand:hover {
@@ -49,8 +56,8 @@ h3 {
 @media (max-width: 575px) {
     .col-sm-4 h3 {
         font-size: 22px;
-        padding: 0px 0px 35px 0px;
-        margin: 0px;
+        padding: 0 0 35px 0;
+        margin: 0;
     }
 }
 
@@ -60,14 +67,14 @@ h4 {
 
 .header {
     font-size: 18px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', serif;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
 p {
     font-size: 16px;
-    font-family: 'Montserrat';;
+    font-family: 'Montserrat', serif;
     line-height: 1.8em;
     margin-bottom: 50px;
 }
@@ -82,7 +89,7 @@ p {
 
 @media (max-width: 575px) {
    #right-align-text p {
-        margin-bottom: 0px;
+        margin-bottom: 0;
         text-align: left;
     }    
 }
@@ -112,13 +119,13 @@ p {
 
 .footer {
     border-top: 1px solid #e2e2e2;
-    padding: 50px 5px 0px 5px;
+    padding: 50px 5px 0 5px;
     margin-bottom: 50px;
 }
 
 @media (max-width: 575px) {
     .footer {
-        padding: 35px 5px 0px 5px;
+        padding: 35px 5px 0 5px;
         margin-bottom: 35px;
     }
 }
@@ -130,7 +137,7 @@ p {
 .footer .row p {
     font-size: 18px;
     font-weight: bolder;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px) {

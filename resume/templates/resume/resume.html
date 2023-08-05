@@ -25,7 +25,7 @@
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-expand-md" style="z-index: 3000;">
-            <a class="navbar-brand" href="{% url 'home' %}">S M Rayhan</a>
+            <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'home/images/smrayhan_circle.png' %}" class="img-fluid rounded-circle" alt="brand image"></a>
             <button class="navbar-toggler" style="border: 1px solid #000000;" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#000000; font-size:28px;"></i></span>
             </button>
@@ -34,6 +34,7 @@
                 <div class="navbar-nav"> 
                     <a class="nav-item nav-link" href="#" onMouseOver="this.style.color=' #926402'" onMouseOut="this.style.color='#000000'" style="color: #000000; font-weight: 100;" id="active">Resume &nbsp| </a>
                     <a class="nav-item nav-link" href="{% url 'projects' %}" onMouseOver="this.style.color='#926402'" onMouseOut="this.style.color='#000000'" style="color: #000000; font-weight: 100;">Projects &nbsp| </a>
+                    <a class="nav-item nav-link" href="{% url 'thoughts:thoughts' %}" onMouseOver="this.style.color='#926402'" onMouseOut="this.style.color='#000000'" style="color: #000000; font-weight: 100;">Thoughts &nbsp| </a>
                     <a class="nav-item nav-link" href="{% url 'contact' %}" onMouseOver="this.style.color='#926402'" onMouseOut="this.style.color='#000000'" style="color: #000000; font-weight: 100;">Contact</a>
                 </div>
             </div>  
@@ -275,24 +276,24 @@
                 </div>
             </div>
             <div class="footer">
-            <div class="row">
-                <div class="col-sm-4">
-                    <p>Phone</p>
-                    <span>123-456-7890</span>
-                </div>
-                <div class="col-sm-4">
-                    <p>Email</p>
-                    <span>info@mysite.com</span>
-                </div>
-                <div class="col-sm-4">
-                    <p>Follow Me</p>
-                        <span class="footer-social-icons"><a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a><a href="https://www.linkedin.com/in/smrayhan81/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></span>
-                </div>
-                <div class="col-sm-4">
-                    <span>&copy;2022 by S M Rayhan<br>Proudly Created by Ishaq Ali</span>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p>Phone</p>
+                        <span>123-456-7890</span>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>Email</p>
+                        <span>info@mysite.com</span>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>Follow Me</p>
+                            <span class="footer-social-icons"><a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a><a href="https://www.linkedin.com/in/smrayhan81/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></span>
+                    </div>
+                    <div class="col-sm-4">
+                        <span>&copy;2022 by S M Rayhan<br>Proudly Created by Ishaq Ali</span>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
         <script>
             $('document').ready(function() {

@@ -16,5 +16,5 @@ class DetailView(generic.ListView):
     template_name = 'thoughts/detail.html'
 
     def get_queryset(self):
-        return ThoughtsV1.objects.all()
+        return ThoughtsV1.objects.all().order_by('id')
 

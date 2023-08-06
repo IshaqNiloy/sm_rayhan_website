@@ -39,11 +39,11 @@
             </div>
         </nav>
         <br>
-        <div class="container-fluid" style="padding: 0px; margin-bottom: 25px;">
+        <div class="container" style="padding: 0px; margin-bottom: 25px;">
                 <div class="col-sm-12">
                     {% for thought in object_list %}
                         {% if thought.id|slugify == request.get_full_path|slice:"10:" %}
-                            <div class="div-blog" style="padding: 15px; margin-left: auto; margin-right: auto;">
+                            <div class="div-blog">
                                 <div class="header" >
                                     <p><b>{{ thought.title | safe }}</b><br><span style="font-size: 14px; font-family: 'Montserrat'; font-weight: normal;">By <b>{{ thought.author }}</b><span style="color: #757575"> | {{ thought.DOP }} </span></span></p>
                                     <span class="share-icon"><a href="http://www.facebook.com/sharer/sharer.php?u=http://www.rezaulhossain.com{{ request.get_full_path|urlencode }}" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>

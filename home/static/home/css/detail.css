@@ -18,10 +18,18 @@ nav {
     font-size: 26px;
 }
 
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .div-blog {
+    padding: 15px;
     max-width: 780px;
     font-size: 20px;
-    margin-bottom: 35px;
+    margin: auto auto 35px;
 }
 .div-blog > p {
     font-family: 'Lusitana', serif;
@@ -48,7 +56,7 @@ nav {
 }
 
 .read-next-section-overlay {
-    max-width: 800px;
+    width: 800px;
     margin: auto;
 }
 
@@ -141,9 +149,11 @@ nav {
 
 .footer {
     width: 100%;
+    float: left;
     border-top: 1px solid #e2e2e2;
     padding: 50px 5px 0px 5px;
     margin-bottom: 50px;
+    clear: both;
 }
 
 @media (max-width: 575px) {
@@ -185,7 +195,3 @@ nav {
 .footer-social-icons a:nth-child(2) {
     margin-left: 10px;
 }
-
-
-
-

@@ -39,7 +39,7 @@
             </div>
         </nav>
         <br>
-        <div class="container" style="padding: 0px; margin-bottom: 25px;">
+        <div class="container">
                 <div class="col-sm-12">
                     {% for thought in object_list %}
                         {% if thought.id|slugify == request.get_full_path|slice:"10:" %}

@@ -11,6 +11,7 @@ urlpatterns = [
     path('', include('projects.urls')),
     path('', include('contact.urls')),
     path('', include('thoughts.urls')),
+    path('', include('moments.urls')),
 ]
 
 if settings.DEBUG:

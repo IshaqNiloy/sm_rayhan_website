@@ -49,7 +49,8 @@ DJANGO_APPS = [
     'resume',
     'projects',
     'contact',
-    'thoughts'
+    'thoughts',
+    'moments'
 ]
 
 INSTALLED_APPS = PREINSTALLED_APPS + THIRD_PARTY_APPS + DJANGO_APPS

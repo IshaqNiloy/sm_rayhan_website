@@ -79,16 +79,16 @@ p {
     margin-bottom: 50px;
 }
 
-#right-align-text {
+.right-align-text {
     text-align: right;
 }
 
-#right-align-text p {
+.right-align-text p {
     font-size: 16px;
 } 
 
 @media (max-width: 575px) {
-   #right-align-text p {
+   .right-align-text p {
         margin-bottom: 0;
         text-align: left;
     }    

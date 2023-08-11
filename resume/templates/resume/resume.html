@@ -1,335 +1,281 @@
+{% extends 'home/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>S M Rayhan</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="images/favicon.png"/>
-        <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Inconsolata|Roboto|Montserrat|Abril+Fatface|Lato:wght@800&display=swap|Vollkorn+SC|Allison&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet"  href="./src/css/lightslider.css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://kit.fontawesome.com/9210d8956f.js" crossorigin="anonymous"></script>
-        <script src="{% static 'home/js/index.js' %}"></script>
-        <script src="{% static 'home/js/float-panel.js' %}"></script>
-        <link rel ="stylesheet" href="{% static 'home/css/resume.css' %}">
-        <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse navbar-expand-md" style="z-index: 3000;">
-            <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'home/images/smrayhan_circle.png' %}" class="img-fluid rounded-circle" alt="brand image"></a>
-            <button class="navbar-toggler" style="border: 1px solid #000000;" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#000000; font-size:28px;"></i></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
-                <div class="navbar-nav"></div>
-                <div class="navbar-nav"> 
-                    <a class="nav-item nav-link" href="#" onMouseOver="this.style.color=' #926402'" onMouseOut="this.style.color='#000000'" style="color: #000000; font-weight: 100;" id="active">Resume &nbsp| </a>
-                    <a class="nav-item nav-link" href="{% url 'projects' %}" onMouseOver="this.style.color='#926402'" onMouseOut="this.style.color='#000000'" style="color: #000000; font-weight: 100;">Projects &nbsp| </a>
-                    <a class="nav-item nav-link" href="{% url 'thoughts:thoughts' %}" onMouseOver="this.style.color='#926402'" onMouseOut="this.style.color='#000000'" style="color: #000000; font-weight: 100;">Thoughts &nbsp| </a>
-                    <a class="nav-item nav-link" href="{% url 'contact' %}" onMouseOver="this.style.color='#926402'" onMouseOut="this.style.color='#000000'" style="color: #000000; font-weight: 100;">Contact</a>
-                </div>
-            </div>  
-        </nav>
-        <br>
-        <div class="container">
-            <div class="work-experience-section">
-                <h1>Resume</h1>
-                <div class="row main">
-                    <div class="col-sm-4">
-                        <h3>Work<br> Experience</h3>
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-6" id="right-align-text">
-                                <p>Aug 2018 - Present</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><span class="header">Proprietor</span><br>
-                                Xappy Distribution is the Authorized distributor of Airtel Brand in Gulshan & Badda Area under ROBI AXIATA Ltd</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row main">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-6" id="right-align-text">
-                                <p>Aug 2019 - Present</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><span class="header">Managing Partner</span><br>
-                                bKask (Mobile Financial Services)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><div class="row main">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-6" id="right-align-text">
-                                <p>Aug 2016 - Feb 2017</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><span class="header"> Consultant</span><br>
-                                Sales & Marketing Operation<br><br>
-                                Achievements:<br>
-                                <span class="circle">&#9679;</span>  2016-17 Market Plan prepare for Teletalk Marketing department</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row main">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-6" id="right-align-text">
-                                <p>Jun 2014 - Mar 2016</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><span class="header">Regional Sales Manager</span><br>
-                                <span class="circle">&#9679;</span> Develop and implement a regional distribution plan.<br>
-                                <span class="circle">&#9679;</span> Develop & execute quarterly/yearly regional business plans to meet region specific market challenges and deliver business growth.<br>
-                                <span class="circle">&#9679;</span> Implementing national brand campaigns/cycles and achieve brand objectives and sales targets for the region.<br>
-                                <span class="circle">&#9679;</span> Assessing current process gaps and recommend various project and business plans.<br>
-                                <span class="circle">&#9679;</span> Work with Cross & critical company functions.<br>
-                                <span class="circle">&#9679;</span> Implement different stakeholder engagement plans in consultation with PR & COM & Central TM.<br>
-                                <span class="circle">&#9679;</span> Develop and lead an efficient and effective regional team (ZSMs, DD FFs)<br> 
-                                <span class="circle">&#9679;</span> Provide/prepare regular business updates to Company & Divisional Management.<br>
-                                <span class="circle">&#9679;</span> Identify alternative sources for revenue/distribution/sales channel.<br><br> 
+{% block link %}<link rel ="stylesheet" href="{% static 'home/css/resume.css' %}">{% endblock %}
+{% block main %}
 
-                                Key Achievement :<br>
-                                A. National Best RSM Competition-Runner-Up in Q-3, 2014.<br>
-                                B. Lead Team Barisal to clinch all 3 prize of National ZSMs (Zonal Sales Manager) in Q-3, 2014.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row main">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-6" id="right-align-text">
-                                <p>Jul 2013 - May 2014</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><span class="header"> Associate Manager, Sales</span><br>
-                                <span class="circle">&#9679;</span> Prepare & execute monthly, quarterly, yearly sales plan & follow up to achieve sales target.
-                                Ensure proper distribution service to all the channel partner of the respective zone.<br>
-                                <span class="circle">&#9679;</span> Business development of the assigned zone and manage overall operation.<br>
-                                <span class="circle">&#9679;</span> Aid Regional Commercial Head (RCH) in assessing current process gaps and recommend various project and business plans to meet the sales objectives and team productivity with a view to enhance numeric distribution in line with the business strategy.<br>
-                                <span class="circle">&#9679;</span> Assist Regional Commercial Head (RCH) & Regional Sales Manager (RSM) to prepare & maintain allocated quarterly & yearly budget.<br>
-                                <span class="circle">&#9679;</span> Assist RSM to setup and split monthly, quarterly, yearly target for the team members & distributors.<br>
-                                <span class="circle">&#9679;</span> Provide regular on & off-job training to distributor field force to achieve excellence in both sales & after sale service.<br>
-                                <span class="circle">&#9679;</span> Prepare training material for field force to achieve extraordinary goals.<br>
-                                <span class="circle">&#9679;</span> Provide feedback to team member to improve team performance.<br>
-                                <span class="circle">&#9679;</span> Prepare & maintain ROI report for distribution and take improvement action if required.<br>
-                                <span class="circle">&#9679;</span> Prepare quarterly, yearly business & feedback report and present to management.<br>
-                                <span class="circle">&#9679;</span> Setup product distribution model set by company to achieve distribution excellence. Manage channel partners to minimize variance among them & the company.<br>
-                                <span class="circle">&#9679;</span> Properly handle complain rose by any channel partner & resolve the issue within standard deadline promised.<br>
-                                <span class="circle">&#9679;</span> Plan & execute for additional requirement of trade offers to motivate the channel.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row main">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-6" id="right-align-text">
-                                <p>Apr 2011 - Jun 2013</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><span class="header">Sr.  Asst Manager, Sales</span><br>
-                                <span class="circle">&#9679;</span> Distribution/Trade Marketing.<br>
-                                <span class="circle">&#9679;</span> Dealer and third party management.<br>
-                                <span class="circle">&#9679;</span> Channel Development.<br> Business Analysis.<br>
-                                <span class="circle">&#9679;</span> Workshop and Training and development.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row main">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-6" id="right-align-text">
-                                <p>Jan 2009 - Mar 2011</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><span class="header">Sr. Executive</span><br>
-                                <span class="circle">&#9679;</span> Responsible for all trade marketing and distribution activities.<br>
-                                <span class="circle">&#9679;</span> Input in regional business plan, team development</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row main">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-6" id="right-align-text">
-                                <p>May 2005 - Dec 2008</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><span class="header">Executive</span><br>
-                                Manage Achieve and control, Zonal Target of Sales Distribution, Marketing & Customer Care.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row main">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-6" id="right-align-text">
-                                <p>Jan 2005 - May 2005</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><span class="header">Business Development Officer</span><br>
-                                Manage Achieve and control, Zonal Target of Sales Distribution, Marketing & Customer Care.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="container">
+    <div class="work-experience-section">
+        <h1>Resume</h1>
+        <div class="row main">
+            <div class="col-sm-4">
+                <h3>Work<br> Experience</h3>
             </div>
-            <div class="education-section">
-                <div class="row main">
-                    <div class="col-sm-4">
-                        <h3>Education</h3>
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-6" id="right-align-text">
-                                <p>2000 - 2004</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><span class="header">Khulna University |<br> Bachelor's Degree</span><br>
-                                Activities and societies: Business Club.<br>
-                                BAD Soccer Team.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="volunteering-section">
-                <div class="row main">
-                    <div class="col-sm-4">
-                        <h3>Volunteering</h3>
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-6" id="right-align-text">
-                                <p>May 2012 - Present</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p><span class="header">Potho Joddha Foundation |<br> Founder</span><br>
-                                Potho Joddha Foundation is a "Society" registered under office of register of Joint Stock companies, Dhaka. (Reg. No:- RJSC-S-11612)<br>
-
-                                PJF is a social movement to work for providing better childhood to the underprivileged Children of the Society. The organization is established as union of friends and cousins.<br>
-
-                                <a href="www.facebook.com/pothojoddha">www.facebook.com/pothojoddha</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-and-expertise-section">
-                <div class="row main">
-                    <div class="col-sm-4">
-                        <h3>Skills & Expertises</h3>
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-6">  
-                            </div>
-                            <div class="col-sm-6">
-                                <p><span class="circle">&#9679;</span> Team Management</p>
-                                <p><span class="circle">&#9679;</span> Business Development</p>
-                                <p><span class="circle">&#9679;</span> Business Planning</p>
-                                <p><span class="circle">&#9679;</span> Management</p>
-                                <p><span class="circle">&#9679;</span> Project Planning</p>
-                                <p><span class="circle">&#9679;</span> Market ResearchMarket Research </p>
-                                <p><span class="circle">&#9679;</span> Business Analysis</p>
-                                <p><span class="circle">&#9679;</span> Leadership</p>
-                                <p><span class="circle">&#9679;</span> Telecommunications </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
+            <div class="col-sm-8">
                 <div class="row">
-                    <div class="col-sm-4">
-                        <p>Phone</p>
-                        <span>123-456-7890</span>
+                    <div class="col-sm-6" class="right-align-text">
+                        <p>Aug 2018 - Present</p>
                     </div>
-                    <div class="col-sm-4">
-                        <p>Email</p>
-                        <span>info@mysite.com</span>
-                    </div>
-                    <div class="col-sm-4">
-                        <p>Follow Me</p>
-                            <span class="footer-social-icons"><a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a><a href="https://www.linkedin.com/in/smrayhan81/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></span>
-                    </div>
-                    <div class="col-sm-4">
-                        <span>&copy;2022 by S M Rayhan<br>Proudly Created by Ishaq Ali</span>
+                    <div class="col-sm-6">
+                        <p><span class="header">Proprietor</span><br>
+                            Xappy Distribution is the Authorized distributor of Airtel Brand in Gulshan & Badda Area
+                            under ROBI AXIATA Ltd</p>
                     </div>
                 </div>
             </div>
         </div>
-        <script>
-            $('document').ready(function() {
-                $('.container').addClass('container-loaded');
-            });
-        </script>
-    </body>
-</html>
+        <div class="row main">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6" class="right-align-text">
+                        <p>Aug 2019 - Present</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><span class="header">Managing Partner</span><br>
+                            bKask (Mobile Financial Services)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row main">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6" class="right-align-text">
+                        <p>Aug 2016 - Feb 2017</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><span class="header"> Consultant</span><br>
+                            Sales & Marketing Operation<br><br>
+                            Achievements:<br>
+                            <span class="circle">&#9679;</span> 2016-17 Market Plan prepare for Teletalk Marketing
+                            department</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row main">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6" class="right-align-text">
+                        <p>Jun 2014 - Mar 2016</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><span class="header">Regional Sales Manager</span><br>
+                            <span class="circle">&#9679;</span> Develop and implement a regional distribution plan.<br>
+                            <span class="circle">&#9679;</span> Develop & execute quarterly/yearly regional business
+                            plans to meet region specific market challenges and deliver business growth.<br>
+                            <span class="circle">&#9679;</span> Implementing national brand campaigns/cycles and achieve
+                            brand objectives and sales targets for the region.<br>
+                            <span class="circle">&#9679;</span> Assessing current process gaps and recommend various
+                            project and business plans.<br>
+                            <span class="circle">&#9679;</span> Work with Cross & critical company functions.<br>
+                            <span class="circle">&#9679;</span> Implement different stakeholder engagement plans in
+                            consultation with PR & COM & Central TM.<br>
+                            <span class="circle">&#9679;</span> Develop and lead an efficient and effective regional
+                            team (ZSMs, DD FFs)<br>
+                            <span class="circle">&#9679;</span> Provide/prepare regular business updates to Company &
+                            Divisional Management.<br>
+                            <span class="circle">&#9679;</span> Identify alternative sources for
+                            revenue/distribution/sales channel.<br><br>
 
+                            Key Achievement :<br>
+                            A. National Best RSM Competition-Runner-Up in Q-3, 2014.<br>
+                            B. Lead Team Barisal to clinch all 3 prize of National ZSMs (Zonal Sales Manager) in Q-3,
+                            2014.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row main">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6" class="right-align-text">
+                        <p>Jul 2013 - May 2014</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><span class="header"> Associate Manager, Sales</span><br>
+                            <span class="circle">&#9679;</span> Prepare & execute monthly, quarterly, yearly sales plan
+                            & follow up to achieve sales target.
+                            Ensure proper distribution service to all the channel partner of the respective zone.<br>
+                            <span class="circle">&#9679;</span> Business development of the assigned zone and manage
+                            overall operation.<br>
+                            <span class="circle">&#9679;</span> Aid Regional Commercial Head (RCH) in assessing current
+                            process gaps and recommend various project and business plans to meet the sales objectives
+                            and team productivity with a view to enhance numeric distribution in line with the business
+                            strategy.<br>
+                            <span class="circle">&#9679;</span> Assist Regional Commercial Head (RCH) & Regional Sales
+                            Manager (RSM) to prepare & maintain allocated quarterly & yearly budget.<br>
+                            <span class="circle">&#9679;</span> Assist RSM to setup and split monthly, quarterly, yearly
+                            target for the team members & distributors.<br>
+                            <span class="circle">&#9679;</span> Provide regular on & off-job training to distributor
+                            field force to achieve excellence in both sales & after sale service.<br>
+                            <span class="circle">&#9679;</span> Prepare training material for field force to achieve
+                            extraordinary goals.<br>
+                            <span class="circle">&#9679;</span> Provide feedback to team member to improve team
+                            performance.<br>
+                            <span class="circle">&#9679;</span> Prepare & maintain ROI report for distribution and take
+                            improvement action if required.<br>
+                            <span class="circle">&#9679;</span> Prepare quarterly, yearly business & feedback report and
+                            present to management.<br>
+                            <span class="circle">&#9679;</span> Setup product distribution model set by company to
+                            achieve distribution excellence. Manage channel partners to minimize variance among them &
+                            the company.<br>
+                            <span class="circle">&#9679;</span> Properly handle complain rose by any channel partner &
+                            resolve the issue within standard deadline promised.<br>
+                            <span class="circle">&#9679;</span> Plan & execute for additional requirement of trade
+                            offers to motivate the channel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row main">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6" class="right-align-text">
+                        <p>Apr 2011 - Jun 2013</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><span class="header">Sr.  Asst Manager, Sales</span><br>
+                            <span class="circle">&#9679;</span> Distribution/Trade Marketing.<br>
+                            <span class="circle">&#9679;</span> Dealer and third party management.<br>
+                            <span class="circle">&#9679;</span> Channel Development.<br> Business Analysis.<br>
+                            <span class="circle">&#9679;</span> Workshop and Training and development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row main">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6" class="right-align-text">
+                        <p>Jan 2009 - Mar 2011</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><span class="header">Sr. Executive</span><br>
+                            <span class="circle">&#9679;</span> Responsible for all trade marketing and distribution
+                            activities.<br>
+                            <span class="circle">&#9679;</span> Input in regional business plan, team development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row main">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6" class="right-align-text">
+                        <p>May 2005 - Dec 2008</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><span class="header">Executive</span><br>
+                            Manage Achieve and control, Zonal Target of Sales Distribution, Marketing & Customer Care.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row main">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6" class="right-align-text">
+                        <p>Jan 2005 - May 2005</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><span class="header">Business Development Officer</span><br>
+                            Manage Achieve and control, Zonal Target of Sales Distribution, Marketing & Customer Care.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="education-section">
+        <div class="row main">
+            <div class="col-sm-4">
+                <h3>Education</h3>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6" class="right-align-text">
+                        <p>2000 - 2004</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><span class="header">Khulna University |<br> Bachelor's Degree</span><br>
+                            Activities and societies: Business Club.<br>
+                            BAD Soccer Team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="volunteering-section">
+        <div class="row main">
+            <div class="col-sm-4">
+                <h3>Volunteering</h3>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6" class="right-align-text">
+                        <p>May 2012 - Present</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><span class="header">Potho Joddha Foundation |<br> Founder</span><br>
+                            Potho Joddha Foundation is a "Society" registered under office of register of Joint Stock
+                            companies, Dhaka. (Reg. No:- RJSC-S-11612)<br>
 
+                            PJF is a social movement to work for providing better childhood to the underprivileged
+                            Children of the Society. The organization is established as union of friends and
+                            cousins.<br>
 
+                            <a href="www.facebook.com/pothojoddha">www.facebook.com/pothojoddha</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills-and-expertise-section">
+        <div class="row main">
+            <div class="col-sm-4">
+                <h3>Skills & Expertises</h3>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6">
+                        <p><span class="circle">&#9679;</span> Team Management</p>
+                        <p><span class="circle">&#9679;</span> Business Development</p>
+                        <p><span class="circle">&#9679;</span> Business Planning</p>
+                        <p><span class="circle">&#9679;</span> Management</p>
+                        <p><span class="circle">&#9679;</span> Project Planning</p>
+                        <p><span class="circle">&#9679;</span> Market ResearchMarket Research </p>
+                        <p><span class="circle">&#9679;</span> Business Analysis</p>
+                        <p><span class="circle">&#9679;</span> Leadership</p>
+                        <p><span class="circle">&#9679;</span> Telecommunications </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      addActiveClass("nav-link-1")
+  });
+</script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% endblock %}

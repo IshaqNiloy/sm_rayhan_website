@@ -41,6 +41,10 @@ nav {
     transition: all 1s ease-in-out;
 }
 
+.main {
+    width: 100%;
+}
+
 /*.container-loaded {*/
 /*    opacity: 1;*/
 /*}*/

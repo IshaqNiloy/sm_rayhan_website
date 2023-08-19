@@ -45,6 +45,10 @@ nav {
 /*    opacity: 1;*/
 /*}*/
 
+.main {
+    width: 100%;
+}
+
 h1 {
     font-size: 40px;
     padding-bottom: 8px;

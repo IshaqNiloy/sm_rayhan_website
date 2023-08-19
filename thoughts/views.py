@@ -11,7 +11,7 @@ class IndexView(generic.ListView):
     template_name = 'thoughts/thoughts.html'
 
     def get_queryset(self):
-        query_set = ThoughtsV1.objects.all()
+        query_set = ThoughtsV1.objects.all().order_by('id')
         items_per_page = settings.ITEMS_PER_PAGE
         paginator = Paginator(query_set, items_per_page)
         page_num = self.request.GET.get('page')

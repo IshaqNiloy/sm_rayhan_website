@@ -23,6 +23,12 @@ nav {
    padding-right: 70px; 
 }
 
+@media (min-width: 1308px) {
+    .navbar-brand {
+        padding-left: 70px;
+    }
+}
+
 #active {
     color: #926402 !important;
 }

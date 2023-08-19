@@ -12,7 +12,7 @@ nav {
 
 .navbar-brand {
     font-weight: 650;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     color: #000;
 }
 
@@ -23,6 +23,12 @@ nav {
 
 .navbar-nav {
    padding-right: 70px;
+}
+
+@media (min-width: 1308px) {
+    .navbar-brand {
+        padding-left: 70px;
+    }
 }
 
 #active {
@@ -88,7 +94,7 @@ h1 {
 }
 
 .content > a > img {
-    margin: 0px;
+    margin: 0;
 }
 
 .content > h4 {
@@ -108,7 +114,7 @@ h4 {
 
 p {
     font-size: 16px;
-    font-family: 'Montserrat';;
+    font-family: 'Montserrat', serif;
     line-height: 1.8em;
     margin-bottom: 50px;
 }
@@ -129,13 +135,13 @@ ul {
 .footer {
     width: 100%;
     border-top: 1px solid #e2e2e2;
-    padding: 50px 5px 0px 5px;
+    padding: 50px 5px 0 5px;
     margin-bottom: 50px;
 }
 
 @media (max-width: 575px) {
     .footer {
-        padding: 35px 5px 0px 5px;
+        padding: 35px 5px 0 5px;
         margin-bottom: 35px;
     }
 }
@@ -151,7 +157,7 @@ ul {
 .footer .row p {
     font-size: 18px;
     font-weight: bolder;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px) {

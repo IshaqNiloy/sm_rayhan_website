@@ -7,6 +7,12 @@ nav {
     margin-top: 15px;
 }
 
+@media (min-width: 1308px) {
+    .navbar-brand {
+        padding-left: 70px;
+    }
+}
+
 .rounded-circle {
     width: 50px;
     border: 3px solid #000;
@@ -110,7 +116,7 @@ p {
     font-family: 'Montserrat', serif;
     font-size: 16px;
     line-height: 1.8;
-    margin: 0px;
+    margin: 0;
 }
 
 .know-more-option, .know-less-option {
@@ -149,7 +155,7 @@ p {
 }
 
 .three-circles > .row > .col-sm-4:nth-child(2) {
-    padding: 0px;
+    padding: 0;
 }
 
 .circle-text-1, .circle-text-2, .circle-text-3 {
@@ -203,7 +209,6 @@ p {
     bottom: 0;
     width: 100%;
     max-width: 1200px;
-    bottom: 0;
     border-top: 1px solid #e2e2e2;
     padding-bottom: 50px;
     padding-top: 50px;

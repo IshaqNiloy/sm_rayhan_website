@@ -10,8 +10,8 @@
                             <div class="div-blog">
                                 <div class="header" >
                                     <p><b>{{ thought.title | safe }}</b><br><span style="font-size: 14px; font-family: 'Montserrat'; font-weight: normal;">By <b>{{ thought.author }}</b><span style="color: #757575"> | {{ thought.DOP }} </span></span></p>
-                                    <span class="share-icon"><a href="http://www.facebook.com/sharer/sharer.php?u=http://www.rezaulhossain.com{{ request.get_full_path|urlencode }}" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-                                        <a href="http://www.linkedin.com/shareArticle?url=http://www.rezaulhossain.com{{ request.get_full_path|urlencode }}&title={{thought.title}}&source=http://www.rezaulhossain.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></span>
+                                    <span class="share-icon"><a href="http://www.facebook.com/sharer/sharer.php?u=http://www.smrayhan.com{{ request.get_full_path|urlencode }}" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                                        <a href="http://www.linkedin.com/shareArticle?url=http://www.smrayhan.com{{ request.get_full_path|urlencode }}&title={{thought.title}}&source=http://www.smrayhan.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></span>
                                     <img src="{{ thought.image.url }}" style="width: 100%;" alt="{{ thought.alternate_text }}">
                                 </div>
                                 {{ thought.article|safe }}<br>

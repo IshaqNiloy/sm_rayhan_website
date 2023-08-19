@@ -14,6 +14,7 @@ function showLess() {
     showMoreOptionElem.style.display = "block";
 }
 
+
 function addActiveClass(navBtn){
     var navBtn = document.getElementById(navBtn);
     navBtn.style.color = "#926402";

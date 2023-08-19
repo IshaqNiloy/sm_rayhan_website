@@ -31,13 +31,13 @@ nav {
 
 .container {
     display: flex;
-    opacity: 0;
+    opacity: 1;
     transition: all 1s ease-in-out;
 }
 
-.container-loaded {
-    opacity: 1;
-}
+/*.container-loaded {*/
+/*    opacity: 1;*/
+/*}*/
 
 h1 {
     font-size: 40px;
@@ -111,6 +111,19 @@ p {
     font-family: 'Montserrat';;
     line-height: 1.8em;
     margin-bottom: 50px;
+}
+
+.page-item a {
+    color: #000;
+    font-family: "Segoe UI", sans-serif !important;
+}
+
+.page-item a:hover {
+    color: #000;
+}
+
+ul {
+    margin-bottom: 60px;
 }
 
 .footer {

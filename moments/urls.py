@@ -5,5 +5,5 @@ app_name = 'moments'
 
 urlpatterns = [
     #/moments/
-    path('moments', views.IndexView.as_view(), name='moments'),
+    path('moments/', views.IndexView.as_view(), name='moments'),
 ]

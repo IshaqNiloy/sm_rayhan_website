@@ -1,31 +1,62 @@
 {% extends 'home/base.html' %}
 {% load static %}
-{% block link %}<link rel ="stylesheet" href="{% static 'home/css/thoughts.css' %}">{% endblock %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'home/css/thoughts.css' %}">{% endblock %}
 {% block main %}
 
-<div class="container">
-    <div class="main">
-        <h1 class="text-center">THOUGHTS</h1>
-        <hr>
-        <!-- Portfolio Gallery Grid -->
-        <div class="row" style="display: flex; flex-wrap: wrap; margin: 10px -16px; padding: 8px; color: #000000;">
-            {% for thought in object_list %}
-            <div class="content">
-                <a href="{% url 'thoughts:detail' thought.id %}">
-                    <img src="{{ thought.image.url }}" alt="{{ thought.alternate_text }}"
-                         style="width:100%; height: 238px;" loading="lazy">
-                    <h4>{{ thought.title }}</h4>
-                </a>
+    <div class="container">
+        <div class="main">
+            <h1 class="text-center">THOUGHTS</h1>
+            <hr>
+            <!-- Portfolio Gallery Grid -->
+            <div class="row" style="display: flex; flex-wrap: wrap; margin: 10px -16px; padding: 8px; color: #000000;">
+                {% for thought in object_list %}
+                    <div class="content">
+                        <a href="{% url 'thoughts:detail' thought.id %}">
+                            <img src="{{ thought.image.url }}" alt="{{ thought.alternate_text }}"
+                                 style="width:100%; height: 238px;" loading="lazy">
+                            <h4>{{ thought.title }}</h4>
+                        </a>
+                    </div>
+                {% endfor %}
             </div>
-            {% endfor %}
+            <!-- END MAIN -->
         </div>
-        <!-- END MAIN -->
     </div>
-</div>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-      addActiveClass("nav-link-3")
-  });
-</script>
+    {% if object_list.paginator.count > 12 %}
+        <nav aria-label="search page">
+            <ul class="pagination justify-content-center">
+                {% if object_list.has_previous %}
+                    <li class="page-item">
+                        <a class="page-link" href="{{ thoughts_url }}?page={{ object_list.next_page_number }}"
+                           tabindex="-1">Previous</a>
+                    </li>
+                {% endif %}
+                <li class="page-item">
+                    {% url 'thoughts:thoughts' as thoughts_url %}
+                    {% with page_number=1 %}
+                        <a class="page-link" href="{{ thoughts_url }}?page={{ page_number }}">1</a>
+                    {% endwith %}
+                </li>
+                <li class="page-item">
+                    {% url 'thoughts:thoughts' as thoughts_url %}
+                    {% with page_number=2 %}
+                        <a class="page-link" href="{{ thoughts_url }}?page={{ page_number }}">2</a>
+                    {% endwith %}
+                </li>
+                <li class="page-item">
+                    {% if object_list.has_next %}
+                        <a class="page-link"
+                           href="{{ thoughts_url_url }}?page={{ object_list.next_page_number }}">Next</a>
+                    {% endif %}
+                </li>
+            </ul>
+        </nav>
+    {% endif %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            addActiveClass("nav-link-3")
+        });
+    </script>
 
 {% endblock %}

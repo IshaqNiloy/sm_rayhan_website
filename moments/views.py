@@ -15,4 +15,6 @@ class IndexView(generic.ListView):
         page_num = self.request.GET.get('page')
         page_obj = paginator.get_page(page_num)
 
+        print(page_obj.number)
+
         return page_obj

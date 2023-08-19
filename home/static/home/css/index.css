@@ -20,6 +20,10 @@ nav {
     overflow: hidden;
 }
 
+.navbar-nav {
+   padding-right: 70px;
+}
+
 .navbar-brand {
     font-weight: 650;
     font-family: 'Montserrat', serif;

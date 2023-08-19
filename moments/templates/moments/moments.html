@@ -24,6 +24,7 @@
         </div>
     </div>
     {% if object_list.paginator.count > 12 %}
+        {% url 'moments:moments' as moments_url %}
         <nav aria-label="search page">
             <ul class="pagination justify-content-center">
                 {% if object_list.has_previous %}
@@ -32,18 +33,14 @@
                            tabindex="-1">Previous</a>
                     </li>
                 {% endif %}
-                <li class="page-item">
-                    {% url 'moments:moments' as moments_url %}
-                    {% with page_number=1 %}
-                        <a class="page-link" href="{{ moments_url }}?page={{ page_number }}">1</a>
-                    {% endwith %}
-                </li>
-                <li class="page-item">
-                    {% url 'moments:moments' as moments_url %}
-                    {% with page_number=2 %}
-                        <a class="page-link" href="{{ moments_url }}?page={{ page_number }}">2</a>
-                    {% endwith %}
-                </li>
+                {% with ''|center:object_list.paginator.num_pages as range %}
+                    {% for _ in range %}
+                        <li class="page-item">
+                            <a class="page-link"
+                               href="{{ moments_url }}?page={{ forloop.counter }}">{{ forloop.counter }}</a>
+                        </li>
+                    {% endfor %}
+                {% endwith %}
                 {% if object_list.has_next %}
                     <li class="page-item">
                         <a class="page-link" href="{{ moments_url }}?page={{ object_list.next_page_number }}">Next</a>

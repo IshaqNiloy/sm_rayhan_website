@@ -37,10 +37,6 @@ nav {
     color: #000;
 }
 
-.navbar-nav > a {
-    color: #000 !important;
-}
-
 .nav-link {
     font-size: 18px;
 }

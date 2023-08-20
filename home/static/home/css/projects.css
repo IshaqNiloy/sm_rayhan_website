@@ -30,13 +30,17 @@ nav {
    padding-right: 70px; 
 }
 
-@media (max-width: 768px) {
+.nav-link {
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
     .vertical-line {
         display: none;
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .vertical-line {
         display: inline;
     }

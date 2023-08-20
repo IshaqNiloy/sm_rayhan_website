@@ -124,16 +124,29 @@ p {
 }
 
 .know-more-option, .know-less-option {
-    position: absolute;
-    right: 0;
+    font-family: 'Montserrat', serif;
+    text-align: right;
     padding-right: 15px;
     cursor: pointer;
     font-weight: bold;
 }
 
+.know-less-option {
+    padding-top: 15px;
+}
+
 .hidden-part {
-    display: none;
-    transition: all 0.5s ease-in-out;
+    height: 0;
+    overflow:hidden;
+}
+
+.card-body {
+    font-family: 'Montserrat', serif;
+    padding: 0;
+}
+
+.card {
+    border: 0;
 }
 
 @media (max-width: 768px) {

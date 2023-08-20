@@ -1,17 +1,14 @@
 function showMore() {
-    var hiddenPartElem = document.getElementsByClassName('hidden-part')[0];
     var showMoreOptionElem = document.getElementsByClassName('know-more-option')[0];
     
-    hiddenPartElem.style.display = "block";
-    showMoreOptionElem.style.display = "none";
+    showMoreOptionElem.style.opacity = "0";
+    showMoreOptionElem.style.transition = "opacity 0.5s ease-in-out";
 }
 
 function showLess() {
-    var hiddenPartElem = document.getElementsByClassName('hidden-part')[0];
     var showMoreOptionElem = document.getElementsByClassName('know-more-option')[0];
     
-    hiddenPartElem.style.display = "none";
-    showMoreOptionElem.style.display = "block";
+    showMoreOptionElem.style.opacity = "1";
 }
 
 

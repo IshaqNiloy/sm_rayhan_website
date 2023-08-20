@@ -1,6 +1,8 @@
 body {
-    height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 nav {
@@ -39,19 +41,24 @@ nav {
     color: #000 !important;
 }
 
-@media (max-width: 768px) {
+.nav-link {
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
     .vertical-line {
         display: none;
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .vertical-line {
         display: inline;
     }
 }
 
 .container {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,22 +190,22 @@ p {
     border: 1px solid #000;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .circle-text-1, .circle-text-2, .circle-text-3 {
         width: 160px;
         height: 160px;
     }
-    .col-sm-4 a {
+    .col-sm-4 p {
         font-size: 22px;
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     .circle-text-1, .circle-text-2, .circle-text-3 {
         width: 86px;
         height: 86px;
     }
-    .col-sm-4 a {
+    .col-sm-4 p {
         font-size: 16px;
     }
 }
@@ -233,8 +240,8 @@ p {
 
 @media (min-width: 1441px) and (max-width: 2559px){
     .footer {
-        position: absolute;
-        bottom: 0;
+        /*position: absolute;*/
+        /*bottom: 0;*/
     }
 }
 

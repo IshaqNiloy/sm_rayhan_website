@@ -35,6 +35,18 @@ nav {
     color: #926402 !important;
 }
 
+@media (max-width: 768px) {
+    .vertical-line {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .vertical-line {
+        display: inline;
+    }
+}
+
 .container {
     display: flex;
     opacity: 1;

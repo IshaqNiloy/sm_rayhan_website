@@ -23,7 +23,7 @@ class EmbeddedMoment(models.Model):
     moment = models.ForeignKey(Moment, on_delete=models.CASCADE)
     id = models.BigAutoField(primary_key=True, editable=False)
     associated_to = models.CharField(max_length=250)
-    image = models.FileField()
+    image = ResizedImageField(size=[500, 300], null=False, blank=False)
     alternate_text = models.CharField(max_length=250)
     header = models.CharField(max_length=250)
     description = models.CharField(max_length=1000)

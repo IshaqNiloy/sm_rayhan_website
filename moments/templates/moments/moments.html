@@ -1,7 +1,7 @@
 {% extends 'home/base.html' %}
 {% load static %}
 {% block main %}
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     {% block link %}
         <link rel="stylesheet" href="{% static 'home/css/moments.css' %}">{% endblock %}
 
@@ -13,10 +13,21 @@
             <div class="row" style="display: flex; flex-wrap: wrap; margin: 10px -16px; padding: 8px; color: #000000;">
                 {% for moment in object_list %}
                     <div class="content">
-                        <a href="{% url 'moments:embedded_moments' moment.id %}"><img src="{{ moment.image.url }}" alt="{{ moment.alternate_text }}"
-                              style="width:100%; height: 238px;" class="hover-shadow cursor img-moments" loading="lazy" onclick=openModal()>
-                            <h4>{{ moment.header }}</h4></a>
-                        {# <p>{{ moment.description }}</p>#}
+                        <a href="{% url 'moments:embedded_moments' moment.id %}">
+                            <div class="overlay-container">
+                                <img src="{{ moment.image.url }}"
+                                     alt="{{ moment.alternate_text }}"
+                                     style="width:100%; height: 238px;"
+                                     class="hover-shadow cursor img-moments"
+                                     loading="lazy"
+                                     onclick=openModal()>
+
+                                <div class="overlay">
+                                    <div class="text"><p>{{ moment.description }}</p></div>
+                                </div>
+                            </div>
+                            <h4>{{ moment.header }}</h4>
+                        </a>
                     </div>
                 {% endfor %}
             </div>

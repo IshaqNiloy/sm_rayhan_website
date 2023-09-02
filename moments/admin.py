@@ -5,14 +5,14 @@ from .models import Moment, EmbeddedMoment
 
 @admin.register(Moment)
 class MomentAdmin(admin.ModelAdmin):
-    list_display = ['associated_to', 'image', 'alternate_text', 'header', 'description']
+    list_display = ['id', 'associated_to', 'image', 'alternate_text', 'header', 'description']
     list_filter = ['associated_to']
     search_fields = ['associated_to']
 
 
 @admin.register(EmbeddedMoment)
 class EmbeddedMomentAdmin(admin.ModelAdmin):
-    list_display = ['associated_to', 'image', 'alternate_text', 'header', 'description']
+    list_display = ['id', 'associated_to', 'image', 'alternate_text', 'header', 'description']
     list_filter = ['associated_to']
     search_fields = ['associated_to']
 

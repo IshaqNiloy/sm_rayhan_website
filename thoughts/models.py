@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from .manager import ThoughtsManager
+from django_resized import ResizedImageField
 
 
 class ThoughtsV1(models.Model):
@@ -11,7 +12,7 @@ class ThoughtsV1(models.Model):
     DOP = models.DateField(null=False, blank=False)
     duration = models.CharField(max_length=100, null=True, blank=True)
     url = models.CharField(max_length=250)
-    image = models.FileField(null=False, blank=False)
+    image = ResizedImageField(size=[500, 300], null=False, blank=False)
     alternate_text_for_image = models.CharField(max_length=250, null=True, blank=True)
     article = models.TextField(null=False, blank=False)
     youtube_video_url = models.CharField(max_length=250, null=True, blank=True)

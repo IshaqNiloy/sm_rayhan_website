@@ -14,7 +14,7 @@
                     <div class="content">
                         <a href="{% url 'thoughts:detail' thought.id %}">
                             <img src="{{ thought.image.url }}" alt="{{ thought.alternate_text }}"
-                                 style="width:100%; height: 238px;" loading="lazy">
+                                 style="width:100%; height: 238px;" class="img-thoughts" loading="lazy">
                             <h4>{{ thought.title }}</h4>
                         </a>
                     </div>

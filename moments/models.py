@@ -6,7 +6,7 @@ from django_resized import ResizedImageField
 class Moment(models.Model):
     id = models.BigAutoField(primary_key=True, editable=False)
     associated_to = models.CharField(max_length=250)
-    image = ResizedImageField(size=[500, 300])
+    image = ResizedImageField(size=[500, 300], null=False, blank=False)
     alternate_text = models.CharField(max_length=250)
     header = models.CharField(max_length=250)
     description = models.CharField(max_length=1000)

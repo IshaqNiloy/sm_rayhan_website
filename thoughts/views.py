@@ -1,10 +1,7 @@
-from django.shortcuts import render
 from django.views import generic
 from .models import ThoughtsV1
-from django.shortcuts import get_object_or_404
 from django.core.paginator import Paginator
 from sm_rayhan_website import settings
-# Create your views here.
 
 
 class IndexView(generic.ListView):

@@ -14,7 +14,7 @@
                 {% for moment in object_list %}
                     <div class="content">
                         <a href="{% url 'moments:embedded_moments' moment.id %}"><img src="{{ moment.image.url }}" alt="{{ moment.alternate_text }}"
-                              style="width:100%; height: 238px;" class="hover-shadow cursor actual-image" loading="lazy" onclick=openModal()>
+                              style="width:100%; height: 238px;" class="hover-shadow cursor img-moments" loading="lazy" onclick=openModal()>
                             <h4>{{ moment.header }}</h4></a>
                         {# <p>{{ moment.description }}</p>#}
                     </div>

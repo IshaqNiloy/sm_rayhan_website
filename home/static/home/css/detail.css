@@ -13,6 +13,12 @@ nav {
    padding-right: 70px;
 }
 
+.navbar-brand {
+    font-weight: 650;
+    font-family: 'Montserrat', serif;
+    color: #000;
+}
+
 @media (min-width: 1308px) {
     .navbar-brand {
         padding-left: 70px;

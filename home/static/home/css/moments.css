@@ -206,10 +206,6 @@ ul {
 
 /*lightbox*/
 
-.row > .column {
-    padding: 0 8px;
-}
-
 .row:after {
     content: "";
     display: table;
@@ -226,7 +222,7 @@ ul {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000 !important;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -239,10 +235,10 @@ ul {
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: black;
     margin: auto;
     padding: 0;
-    width: 90%;
+    width: ;
     max-width: 1200px;
 }
 
@@ -266,6 +262,11 @@ ul {
 /* Hide the slides by default */
 .mySlides {
     display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 200px;
 }
 
 /* Next & previous buttons */
@@ -295,6 +296,8 @@ ul {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
+    color: #fff;
+    text-decoration: none;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
